@@ -15,7 +15,7 @@ This API removes the background from an image and detects, crops, and resizes a 
 2. Clone the repository.
 3. Navigate to the project directory:
    ```bash
-   cd /Face-Detection-BG-Remove
+   cd /Face-Detect-BG-Remove
    ```
 4. (Optional) Create and activate a virtual environment:
    ```bash

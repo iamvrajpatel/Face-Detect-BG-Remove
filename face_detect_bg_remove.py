@@ -57,7 +57,7 @@ def process_image_sync(image_data):
         raise HTTPException(status_code=404, detail="No face detected")
     first_face = next(iter(faces.values()))
     facial_area = first_face.get("facial_area")
-    margin_percent = (0.2, 0.2, 0.2, 0.2)
+    margin_percent = (0.2, 0.4, 0.2, 0.2)
     face_crop = crop_face_with_margin(img, facial_area, margin_percent)
     resized_face = cv2.resize(face_crop, (640, 640), interpolation=cv2.INTER_LINEAR)
     is_success, buffer = cv2.imencode(".png", resized_face)
